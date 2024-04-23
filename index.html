@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Player</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <div id="voice-options" style="text-align: center">
+                <h1>Select Part</h1>
+                <button class="button" id="all_button">All Parts</button>
+                <button class="button" id="bass_button">Bass</button>
+                <button class="button" id="baritone_button">Baritone</button>
+                <button class="button" id="tenor2_button">Tenor 2</button>
+                <button class="button" id="tenor1_button">Tenor 1</button>
+            </div>
+            <div id="all" class="container hidden">
+                <button onclick="back()" class="button">Back</button>
+                <h1>All Parts</h1>
+                <audio controls id="all_audio">
+                    <source src="./Full Piano.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="bass" class="container hidden">
+                <button onclick="back()" class="button">Back</button>
+                <h1>Bass</h1>
+                <audio controls id="bass_audio">
+                    <source src="./Bass.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="baritone" class="container hidden">
+                <button onclick="back()" class="button">Back</button>
+                <h1>Baritone</h1>
+                <audio controls id="baritone_audio">
+                    <source src="./Baritone.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="tenor2" class="container hidden">
+                <button onclick="back()" class="button">Back</button>
+                <h1>Tenor 2</h1>
+                <audio controls id="tenor2_audio">
+                    <source src="./Tenor 2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="tenor1" class="container hidden">
+                <button onclick="back()" class="button">Back</button>
+                <h1>Tenor 1</h1>
+                <audio controls id="tenor1_audio">
+                    <source src="./Tenor 1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="speed-controls-container" class="container hidden">
+                <br>
+                <h3 id="speed_text">Current Speed: 1x</h3>
+                <div class="speed-controls">
+                    <button class="button" id="slower_button" onclick="slow()"><< Slower</button>
+                    <button class="button" id="normal_button" onclick="normal()">Normal</button>
+                    <button class="button" id="faster_button" onclick="fast()">Faster >></button>
+                </div>
+            </div>
+            
+        </div>
+        <script src="script.js" type=""></script>
+    </body>
+</html>
